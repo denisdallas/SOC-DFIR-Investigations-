@@ -1,0 +1,28 @@
+name: Validate synthetic evidence pack
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render-case-timelines:
+    name: Render all fictional case timelines
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Render incident timelines
+        run: |
+          python scripts/summarize_case.py INC-01
+          python scripts/summarize_case.py INC-02
+          python scripts/summarize_case.py INC-03

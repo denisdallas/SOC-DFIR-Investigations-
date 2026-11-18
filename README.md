@@ -46,14 +46,21 @@ Technique references are included to demonstrate structured behavioral mapping. 
 
 ## Repository structure
 
-```text
+~~~text
 SOC-DFIR-Investigations-/
+├── .github/workflows/evidence-pack.yml
 ├── README.md
-└── incidents/
-    ├── 01-phishing-account-compromise.md
-    ├── 02-ransomware-investigation.md
-    └── 03-network-intrusion-data-exfiltration.md
-```
+├── detections/incident-02-encoded-powershell.yml
+├── evidence/
+│   ├── README.md
+│   └── events.csv
+├── incidents/
+│   ├── 01-phishing-account-compromise.md
+│   ├── 02-ransomware-investigation.md
+│   └── 03-network-intrusion-data-exfiltration.md
+├── queries/README.md
+└── scripts/summarize_case.py
+~~~
 
 ## Scope and responsible use
 
@@ -63,3 +70,16 @@ These are defensive, educational case studies. They focus on detection, investig
 
 **Denis Dallas**  
 GitHub: [@denisdallas](https://github.com/denisdallas)
+
+
+## Reproduce a case timeline
+
+From the repository root, render the synthetic timeline for any case:
+
+~~~sh
+python scripts/summarize_case.py INC-01
+~~~
+
+Use `INC-02` or `INC-03` for the other scenarios. The command uses only the Python standard library and prints the fictional events, sources, and assessment labels.
+
+Explore the [evidence pack](evidence/README.md), [investigation queries](queries/README.md), and [defensive Sigma example](detections/incident-02-encoded-powershell.yml). The dataset is a readable summary of the published timelines, not raw telemetry or real incident evidence.

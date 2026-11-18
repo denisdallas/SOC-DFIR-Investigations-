@@ -191,3 +191,7 @@ The simulated investigation identifies suspicious administrative access and anom
 ## 12. Evidence limitations
 
 No packet capture, server disk image, memory image, raw application export, or destination-side evidence is included. The scenario demonstrates how to correlate network and host telemetry while maintaining an evidence-based threshold for claims of compromise and data theft.
+
+## Reproducible sample evidence
+
+The corresponding fictional timeline is available in the [normalized sample events](../evidence/events.csv) and [evidence guide](../evidence/README.md). From the repository root, run `python scripts/summarize_case.py INC-03` to review it. The [query examples](../queries/README.md) show how to correlate DNS, firewall, proxy, and server events in a lab.

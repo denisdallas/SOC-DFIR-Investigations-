@@ -164,3 +164,7 @@ The simulated evidence supports a phishing-led account compromise. The response 
 ## 11. Evidence limitations
 
 This case study uses synthetic records and does not include raw email files, actual identity-provider exports, endpoint disk images, or independently verifiable forensic artifacts. The findings demonstrate an investigation method rather than a real-world forensic conclusion.
+
+## Reproducible sample evidence
+
+The corresponding fictional timeline is available in the [normalized sample events](../evidence/events.csv) and [evidence guide](../evidence/README.md). From the repository root, run `python scripts/summarize_case.py INC-01` to review it. The [query examples](../queries/README.md) show how to investigate the sequence in a lab.

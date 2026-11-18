@@ -176,3 +176,7 @@ The simulated evidence supports a multi-endpoint ransomware-like incident with i
 ## 11. Evidence limitations
 
 This report contains no real disk image, memory capture, malware sample, or production log export. The scenario is designed to demonstrate defensible DFIR reasoning, evidence handling, and recovery planning—not to represent a completed real-world investigation.
+
+## Reproducible sample evidence
+
+The corresponding fictional timeline is available in the [normalized sample events](../evidence/events.csv) and [evidence guide](../evidence/README.md). From the repository root, run `python scripts/summarize_case.py INC-02` to review it. The [defensive Sigma example](../detections/incident-02-encoded-powershell.yml) is illustrative and should be tuned for a real environment; see the [query examples](../queries/README.md).

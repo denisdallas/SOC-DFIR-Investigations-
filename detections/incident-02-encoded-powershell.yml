@@ -1,0 +1,25 @@
+title: Suspicious PowerShell Encoded Command-Line
+id: 3fb3651b-f9ed-41e8-8f07-b50dfb65c9a2
+status: experimental
+description: Detects PowerShell process creation with an encoded-command switch. This defensive example relates to the fictional Incident 02 narrative; it is not tuned to a real environment.
+author: Denis Dallas
+date: 2026/11/18
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection_image:
+    Image|endswith:
+      - '\\powershell.exe'
+      - '\\pwsh.exe'
+  selection_encoded_switch:
+    CommandLine|contains:
+      - ' -enc '
+      - ' -encodedcommand '
+  condition: selection_image and selection_encoded_switch
+falsepositives:
+  - Authorized administrators or software deployment tools that intentionally use encoded PowerShell
+level: medium
+tags:
+  - attack.execution
+  - attack.t1059.001

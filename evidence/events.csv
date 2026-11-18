@@ -1,0 +1,27 @@
+case_id,time_utc,source,asset,identity,source_ip,destination,event_type,observation,assessment
+INC-01,08:42,email_gateway,mailbox,alex.morgan@example.com,,,email_received,Unexpected document-sharing notification received,reported
+INC-01,08:47,email_gateway,mailbox,alex.morgan@example.com,,login-check.example.com,url_redirect,Message link redirects to reserved example domain,suspicious_url_observed
+INC-01,08:49,browser_telemetry,WS-014,alex.morgan@example.com,,login-check.example.com,browser_navigation,Browser telemetry records navigation to the example domain,interaction_observed
+INC-01,08:51,identity_provider,identity,alex.morgan@example.com,198.51.100.24,,successful_signin,Identity logs record a successful sign-in from an unfamiliar source,suspicious_authentication
+INC-01,08:54,identity_provider,identity,alex.morgan@example.com,,,session_issued,New session issued; token value is intentionally omitted,session_activity
+INC-01,09:06,user_report,service_desk,alex.morgan@example.com,,,unfamiliar_signin_report,User reports an unfamiliar sign-in notification,user_report
+INC-01,09:12,soc_response,identity,alex.morgan@example.com,,,sessions_disabled,Active sessions disabled and account containment begins,response_action
+INC-01,09:25,soc_response,identity,alex.morgan@example.com,,,password_reset_mfa_reregistration,Password reset and MFA re-registration initiated,response_action
+INC-02,02:13,edr,FIN-WS-022,,, ,powershell_process_start,Unusual PowerShell process starts on FIN-WS-022,observed
+INC-02,02:14,edr,FIN-WS-022,,,,encoded_command_child_process,Child process has encoded command-line content; content is omitted,observed
+INC-02,02:16,edr_and_file_server,FIN-WS-022,,,,file_rename_write_burst,High-volume file rename and write activity begins,observed
+INC-02,02:19,file_system,affected_directories,,,,ransom_note_style_file,Ransom-note-style text file appears in affected directories,observed
+INC-02,02:22,edr,OPS-WS-008,,,,similar_file_activity,Similar file modification behavior appears on OPS-WS-008,observed
+INC-02,02:27,server_audit,FS-01,,,,abnormal_write_volume,File server records abnormal write volume from FIN-WS-022,observed
+INC-02,02:31,soc_response,workstations,,,,workstations_isolated,SOC isolates affected workstations from the network,response_action
+INC-02,02:45,soc_response,FS-01,,,,file_server_writes_restricted,File-server write access from affected endpoints is restricted,response_action
+INC-02,03:10,recovery,backup_environment,,,,backup_integrity_checks,Backup integrity and isolation checks begin,recovery_action
+INC-03,14:02,identity_and_server,APP-SRV-03,svc-maint@example.com,,,unusual_admin_logon,Administrative logon to APP-SRV-03 from an unusual internal source,observed
+INC-03,14:08,dns,APP-SRV-03,,,updates-check.example.net,dns_query,Server queries the reserved example domain,observed
+INC-03,14:09,firewall,APP-SRV-03,, ,203.0.113.45,outbound_connection,Firewall records outbound connection to documentation-only IP,observed
+INC-03,14:12,network_flow,APP-SRV-03,,,203.0.113.45,repeated_outbound_sessions,Repeated outbound sessions begin,observed
+INC-03,14:18,network_flow,APP-SRV-03,,,203.0.113.45,egress_volume_anomaly,Outbound byte count exceeds the simulated baseline; no exact value is asserted,observed_anomaly
+INC-03,14:24,proxy,APP-SRV-03,,,updates-check.example.net,proxy_request,Proxy records a request to the reserved example domain,observed
+INC-03,14:31,soc_response,APP-SRV-03,,,203.0.113.45,destination_blocked_simulation,SOC blocks the destination in the simulation and restricts server egress,response_action
+INC-03,14:40,soc_response,APP-SRV-03,,,,management_access_restricted,Server access is limited to approved management paths,response_action
+INC-03,15:05,evidence_collection,APP-SRV-03,,,,evidence_preservation_started,Host identity DNS and firewall evidence preservation begins,investigation_action
