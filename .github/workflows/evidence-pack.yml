@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 name: Validate synthetic evidence pack
 
 on:

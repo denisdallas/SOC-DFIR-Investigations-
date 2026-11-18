@@ -1,0 +1,10 @@
+# License overview
+
+Copyright (c) 2026 Denis Dallas
+
+This repository uses separate licenses for software code and portfolio content.
+
+- MIT applies to `.github/workflows/evidence-pack.yml`, `detections/`, `scripts/`, `tests/`, and the Kusto and Splunk query code blocks in `queries/README.md`. See [LICENSE-MIT](LICENSE-MIT).
+- Creative Commons Attribution 4.0 International (CC BY 4.0) applies to `README.md`, `incidents/`, `evidence/`, and explanatory prose in `queries/README.md`. See [LICENSE-CC-BY-4.0](LICENSE-CC-BY-4.0).
+
+The scope above identifies the license for each original project file. Third-party names and marks remain with their owners.

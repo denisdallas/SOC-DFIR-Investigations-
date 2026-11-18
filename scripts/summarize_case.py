@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """Render one fictional SOC/DFIR timeline from the repository evidence CSV."""
 from __future__ import annotations
 

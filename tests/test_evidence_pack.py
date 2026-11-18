@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Regression checks for the repository's synthetic evidence pack."""
 from __future__ import annotations
 

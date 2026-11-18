@@ -1,5 +1,6 @@
 # Synthetic evidence pack
 
+> © 2026 Denis Dallas. Licensed under [CC BY 4.0](../LICENSE-CC-BY-4.0). For reuse, credit Denis Dallas, SOC & DFIR Investigations, link to the repository and license, and indicate changes.
 Every record in this folder is fictional and exists only to support the portfolio case studies. This is a normalized event summary, not a raw log export or real incident evidence. It contains no real credentials, personal data, malware, or usable threat-intelligence feed.
 
 ## Dataset

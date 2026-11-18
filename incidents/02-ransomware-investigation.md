@@ -1,5 +1,6 @@
 # Incident 02 — Ransomware Incident and Digital Forensics
 
+> © 2026 Denis Dallas. Licensed under [CC BY 4.0](../LICENSE-CC-BY-4.0). For reuse, credit Denis Dallas, SOC & DFIR Investigations, link to the repository and license, and indicate changes.
 <sub>Fictional portfolio simulation · DFIR investigation · Severity: Critical (simulated)</sub>
 
 > **Disclaimer:** This is a fictional defensive training scenario. No real organization, victim, malware sample, or threat actor is represented. IP addresses use RFC 5737 documentation ranges; domains use reserved example domains. No operational malware or valid threat-intelligence hashes are provided.

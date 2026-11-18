@@ -49,6 +49,9 @@ Technique references are included to demonstrate structured behavioral mapping. 
 ~~~text
 SOC-DFIR-Investigations-/
 ├── .github/workflows/evidence-pack.yml
+├── LICENSE
+├── LICENSE-CC-BY-4.0
+├── LICENSE-MIT
 ├── README.md
 ├── detections/incident-02-encoded-powershell.yml
 ├── evidence/
@@ -62,6 +65,14 @@ SOC-DFIR-Investigations-/
 ├── scripts/summarize_case.py
 └── tests/test_evidence_pack.py
 ~~~
+
+## Licensing and reuse
+
+This repository separates code from portfolio content:
+
+- **MIT** applies to the workflow, detection rule, timeline renderer, regression tests, and Kusto/Splunk query code. See [LICENSE-MIT](LICENSE-MIT).
+- **CC BY 4.0** applies to this README, the incident reports, the evidence guide and synthetic event dataset, and explanatory prose in the query guide. See [LICENSE-CC-BY-4.0](LICENSE-CC-BY-4.0).
+- For CC BY 4.0 reuse, credit **Denis Dallas, SOC & DFIR Investigations**, link to the repository and license, and indicate changes.
 
 ## Scope and responsible use
 
