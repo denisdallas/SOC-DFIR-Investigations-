@@ -1,6 +1,7 @@
 # Lab query examples
 
 > Query code blocks are licensed under [MIT](../LICENSE-MIT); the explanatory prose in this guide is licensed under [CC BY 4.0](../LICENSE-CC-BY-4.0).
+
 The [synthetic event dataset](../evidence/events.csv) is a readable timeline summary, not raw telemetry. The examples below demonstrate investigation pivots against a lab table populated from that CSV. They do not prove that a real incident occurred or that data was stolen.
 
 ## Microsoft Sentinel / Kusto

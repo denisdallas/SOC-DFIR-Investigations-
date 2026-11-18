@@ -1,6 +1,7 @@
 # Incident 01 — Phishing and Account Compromise
 
 > © 2026 Denis Dallas. Licensed under [CC BY 4.0](../LICENSE-CC-BY-4.0). For reuse, credit Denis Dallas, SOC & DFIR Investigations, link to the repository and license, and indicate changes.
+
 <sub>Fictional portfolio simulation · SOC investigation · Severity: High (simulated)</sub>
 
 > **Disclaimer:** This is a fictional training scenario. All entities, accounts, events, timestamps, and indicators are synthetic. IP addresses are from RFC 5737 documentation ranges; domains are reserved examples. Any hash value would be a placeholder, not a valid IoC.

@@ -1,6 +1,7 @@
 # Incident 03 — Network Intrusion and Simulated Data Exfiltration
 
 > © 2026 Denis Dallas. Licensed under [CC BY 4.0](../LICENSE-CC-BY-4.0). For reuse, credit Denis Dallas, SOC & DFIR Investigations, link to the repository and license, and indicate changes.
+
 <sub>Fictional portfolio simulation · Network security investigation · Severity: High (simulated)</sub>
 
 > **Disclaimer:** This case is entirely fictional. All systems, events, users, and indicators are synthetic. IP addresses are reserved documentation ranges under RFC 5737; domains use reserved example domains. No real organization, victim, attacker, or data transfer is represented.
