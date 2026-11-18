@@ -7,7 +7,7 @@ INC-01,08:54,identity_provider,identity,alex.morgan@example.com,,,session_issued
 INC-01,09:06,user_report,service_desk,alex.morgan@example.com,,,unfamiliar_signin_report,User reports an unfamiliar sign-in notification,user_report
 INC-01,09:12,soc_response,identity,alex.morgan@example.com,,,sessions_disabled,Active sessions disabled and account containment begins,response_action
 INC-01,09:25,soc_response,identity,alex.morgan@example.com,,,password_reset_mfa_reregistration,Password reset and MFA re-registration initiated,response_action
-INC-02,02:13,edr,FIN-WS-022,,, ,powershell_process_start,Unusual PowerShell process starts on FIN-WS-022,observed
+INC-02,02:13,edr,FIN-WS-022,,,,powershell_process_start,Unusual PowerShell process starts on FIN-WS-022,observed
 INC-02,02:14,edr,FIN-WS-022,,,,encoded_command_child_process,Child process has encoded command-line content; content is omitted,observed
 INC-02,02:16,edr_and_file_server,FIN-WS-022,,,,file_rename_write_burst,High-volume file rename and write activity begins,observed
 INC-02,02:19,file_system,affected_directories,,,,ransom_note_style_file,Ransom-note-style text file appears in affected directories,observed
@@ -18,7 +18,7 @@ INC-02,02:45,soc_response,FS-01,,,,file_server_writes_restricted,File-server wri
 INC-02,03:10,recovery,backup_environment,,,,backup_integrity_checks,Backup integrity and isolation checks begin,recovery_action
 INC-03,14:02,identity_and_server,APP-SRV-03,svc-maint@example.com,,,unusual_admin_logon,Administrative logon to APP-SRV-03 from an unusual internal source,observed
 INC-03,14:08,dns,APP-SRV-03,,,updates-check.example.net,dns_query,Server queries the reserved example domain,observed
-INC-03,14:09,firewall,APP-SRV-03,, ,203.0.113.45,outbound_connection,Firewall records outbound connection to documentation-only IP,observed
+INC-03,14:09,firewall,APP-SRV-03,,,203.0.113.45,outbound_connection,Firewall records outbound connection to documentation-only IP,observed
 INC-03,14:12,network_flow,APP-SRV-03,,,203.0.113.45,repeated_outbound_sessions,Repeated outbound sessions begin,observed
 INC-03,14:18,network_flow,APP-SRV-03,,,203.0.113.45,egress_volume_anomaly,Outbound byte count exceeds the simulated baseline; no exact value is asserted,observed_anomaly
 INC-03,14:24,proxy,APP-SRV-03,,,updates-check.example.net,proxy_request,Proxy records a request to the reserved example domain,observed

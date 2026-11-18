@@ -36,7 +36,7 @@ Each case study follows a repeatable incident-response structure:
 ## Synthetic indicator conventions
 
 - Documentation IP ranges: `192.0.2.0/24`, `198.51.100.0/24`, and `203.0.113.0/24` (RFC 5737 TEST-NET).
-- Example domains: `example.com`, `example.net`, and `example.org).
+- Example domains: `example.com`, `example.net`, and `example.org`.
 - Hash values, where shown, are clearly marked placeholders and are not usable indicators.
 - All usernames, organizations, devices, and event records are fictional.
 
@@ -59,7 +59,8 @@ SOC-DFIR-Investigations-/
 │   ├── 02-ransomware-investigation.md
 │   └── 03-network-intrusion-data-exfiltration.md
 ├── queries/README.md
-└── scripts/summarize_case.py
+├── scripts/summarize_case.py
+└── tests/test_evidence_pack.py
 ~~~
 
 ## Scope and responsible use
@@ -80,6 +81,6 @@ From the repository root, render the synthetic timeline for any case:
 python scripts/summarize_case.py INC-01
 ~~~
 
-Use `INC-02` or `INC-03` for the other scenarios. The command uses only the Python standard library and prints the fictional events, sources, and assessment labels.
+Use `INC-02` or `INC-03` for the other scenarios. The command uses only the Python standard library and prints the fictional events, sources, and assessment labels. Run `python -m unittest discover -s tests -v` for regression checks on the dataset and renderer; GitHub Actions runs those checks and renders all three cases.
 
 Explore the [evidence pack](evidence/README.md), [investigation queries](queries/README.md), and [defensive Sigma example](detections/incident-02-encoded-powershell.yml). The dataset is a readable summary of the published timelines, not raw telemetry or real incident evidence.
